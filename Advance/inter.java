@@ -10,7 +10,12 @@ interface A {
     void config();
 }
 
-class B implements A {
+interface C {
+
+    void run();
+}
+
+class B implements A, C {
 
     public void show() {
         System.out.println("This is show method");
@@ -18,6 +23,10 @@ class B implements A {
 
     public void config() {
         System.out.println("This is config method");
+    }
+
+    public void run() {
+        System.out.println("Run");
     }
 }
 
@@ -27,6 +36,8 @@ public class inter {
         A obj = new B();
         obj.config();
         obj.show();
+        C obj1 = new B();
+        obj1.run();
         System.out.println(A.a);
         System.out.println(A.s);
     }
