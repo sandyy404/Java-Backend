@@ -1,7 +1,7 @@
 package Advance;
 
 enum Status {
-    Success, Failed, Pending;    // these are the object constant of the Status class
+    Success, Failed, Pending;    // these are the constant object  of the Status class
 }
 
 public class Enum {
@@ -35,6 +35,8 @@ public class Enum {
             default:
                 System.out.println("Done");
         }
+
+        
 
     }
 }
