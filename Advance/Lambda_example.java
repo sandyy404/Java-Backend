@@ -11,7 +11,7 @@ public class Lambda_example {
       //    return i+j;
       //   }
       // };
-      A jod = ( i, j) -> i+j;       // if I curly bracket then return keyword is mendatory.
+      A jod = ( i, j) -> i+j;       // if I curly bracket is there then return keyword is mendatory.
      int a = jod.sum(5,4);
      System.out.println(a);
    }
